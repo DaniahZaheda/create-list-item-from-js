@@ -1,16 +1,15 @@
-var data = "";
-        data += `<li>c++</li>`;
-        data += `<li>css</li>`;
-        data += `<li>html</li>`;
+var programmingLang =['c++', 'java','html'];
+var data="";
+for(var i=0;i<programmingLang.length;++i){
+        data += `<li>${programmingLang[i]}</li>`;
+}
+document.querySelector(".lang").innerHTML=data;
+ 
 
-        console.log(data);
-        document.querySelector(".lang").innerHTML = data;
 
-
-        var data1 ="";
-        data1 += `<li>snakcornar</li>`;
-        data1 += `<li>pizza one</li>`;
-        data1 += `<li>zuaar</li>`;
-
-        console.log(data);
-        document.querySelector(".res").innerHTML = data1;
+var restaurants =['Snack corner', 'zuaar','Segafredo'];
+var data="";
+for(var i=0;i<restaurants.length;++i){
+        data += `<li>${restaurants[i]}</li>`;
+}
+document.querySelector(".res").innerHTML=data;
